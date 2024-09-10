@@ -36,6 +36,25 @@ class pr002 {
 		System.out.println("value ch with 97 code: " + ch);
 		I = (int)ch;
 		System.out.println("ch code: " + I);
+		ch = 'А';
+		for (i=0; i<63; i++) {
+			I = (int)ch;
+			System.out.print("Symbol code " + ch + ":" + I + " \n");
+			ch++;
+		}
+
+		//log data type
+		System.out.println("log sym type exmp\n");
+		boolean boob;
+		boob = false;
+		System.out.println("boob value:" + boob);
+		boob = true;
+		System.out.println("boob value:" + boob);
+		if(boob) System.out.println("vivodim stroku, if \"boob\" true ");
+		if(!boob) System.out.println("vivodim stroku, if inversia \"boob\" true ");
+		boob = ch== 'я';
+		if(boob)
+			System.out.println("symbol ch equals \"я\"");
 
         }
 }
