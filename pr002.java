@@ -52,9 +52,35 @@ class pr002 {
 		System.out.println("boob value:" + boob);
 		if(boob) System.out.println("vivodim stroku, if \"boob\" true ");
 		if(!boob) System.out.println("vivodim stroku, if inversia \"boob\" true ");
-		boob = ch== 'я';
+		boob = (ch== 'я');
 		if(boob)
 			System.out.println("symbol ch equals \"я\"");
 
-        }
+	//Log operations 
+	System.out.println("\n");
+	boolean p, q;
+	System.out.println("P\tQ\tAND\tOR\tXOR\tNOT");
+	p = true; q = true;
+	System.out.print(p + "\t" + q + "\t");
+	System.out.print((p&q) + "\t" + (p|q) + "\t");
+	System.out.println((p^q) + "\t" + (!p));
+
+	p = false; q = false;
+	System.out.print(p + "\t" + q + "\t");
+	System.out.print((p&q) + "\t" + (p|q) + "\t");
+	System.out.println((p^q) + "\t" + (!p));
+
+	p = true; q = false;
+        System.out.print(p + "\t" + q + "\t");
+        System.out.print((p&q) + "\t" + (p|q) + "\t");
+        System.out.println((p^q) + "\t" + (!p));
+	
+	p = false; q = true;
+        System.out.print(p + "\t" + q + "\t");
+        System.out.print((p&q) + "\t" + (p|q) + "\t");
+        System.out.println((p^q) + "\t" + (!p));
+	
+
+	}
+
 }
