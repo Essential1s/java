@@ -81,6 +81,18 @@ class pr002 {
         System.out.println((p^q) + "\t" + (!p));
 	
 
+	//Unexp increase data type exmp
+	System.out.println("\n");
+	byte b11;
+	int i11;
+	b11 = 10;
+	i11 = b11 * b11;   //Pri umnojenii tipov byte poluchaetsa povishenie do int
+
+	b11 = 10;
+	b11 = (byte)(b11 * b11);
+	System.out.println("i11 and b11" + i11 + " " + b11);
+
+
 	}
 
 }
