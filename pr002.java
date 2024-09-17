@@ -90,7 +90,7 @@ class pr002 {
 
 	b11 = 10;
 	b11 = (byte)(b11 * b11);
-	System.out.println("i11 and b11" + i11 + " " + b11);
+	System.out.println("i11 and b11: " + i11 + " " + b11);
 
 
 	}
