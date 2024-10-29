@@ -201,6 +201,23 @@ for(int i3=5; i3<7; i3++) {
                 int result;
                 result = str1.compareTo(str3);
                 System.out.println("Результаты сравнения строк: " + result);
+		
+			System.out.println("Str1 length" + str1.length());
 
+			System.out.println("First symbol in str1: " + str1.charAt(0) + "\n" + ((int)str1.charAt(1)));
+			
+			char ch;
+			for (int i3 = 0; i3< str1.length(); i3++)
+				System.out.print(str1.charAt(i3));
+			System.out.println();
+
+			//Index return
+			System.out.println("First string insertion \"rok\" in str2: " + str2.indexof("rok"));
+
+			System.out.println("Last string insertion \"rok\" in str2: " + str2.lastindexof("rok"));
+
+			System.out.println();
+			String[] strs = {"elem", "strokovogo", "massiva", "dlya", "primera"};
+			
         }
 }
