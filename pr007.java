@@ -77,6 +77,25 @@ class CallByRef {
                 ob5.b12 = -ob5.b12;
 	}
 }
+//method overload
+class Overload {
+	void ovlDemo() {
+		System.out.println("with no param");
+	}
+	void ovlDemo(int a15) {
+		System.out.println("One param int type: " + a15);
+	}
+	int ovlDemo(int a15, int b15) {
+		System.out.println("Two param int type: " + a15 + " " + b15);
+		return a15+b15;
+	}
+	double ovlDemo(double a15, double b15) {
+		System.out.println("Two param double type: " + a15 + " " + b15);
+		return a15-b15;
+	}
+}
+
+
 class pr007 {
 	public static void main(String[] args) {
 		Mod ob = new Mod();
@@ -140,7 +159,20 @@ class pr007 {
 		System.out.println("a12 & b12 after ob4.Change: " + ob6.a12 + " " + ob6.b12);
 		
 		System.out.println();
-		
+		Overload ob7 = new Overload();
+		int resI;
+		double resD;
+
+		ob7.ovlDemo();
+		System.out.println();
+		ob7.ovlDemo(2);
+		System.out.println();
+		resI = ob7.ovlDemo(4, 6);
+		System.out.println("Call res ob7.ovlDemo(4, 6): " + resI);
+		System.out.println();
+		resD = ob7.ovlDemo(4.1, 6.5);
+                System.out.println("Call res ob7.ovlDemo(4.1, 6.5): " + resD);
+		System.out.println();
 	}
 }
 
