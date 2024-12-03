@@ -57,8 +57,8 @@ class Triangle extends TwoDShape {
 	Triangle(int a, int b) {
 		super.common = a;
 		common = b;
-		System.out.println("common value in superclass" + super.common);
-		System.out.println("common value in podclass" + common);
+		System.out.println("common value in superclass: " + super.common);
+		System.out.println("common value in podclass: " + common);
 
 	}
 	double area() {
@@ -107,3 +107,14 @@ class Rectangle extends TwoDShape {
 	}
 }
 
+class pr009 {
+	public static void main(String[] args) {
+	Triangle t1 = new Triangle();
+	Triangle t2 = new Triangle("Filled", 8.0, 12.0);
+	Triangle t3 = new Triangle(4.0);
+	Triangle t4 = new Triangle(5, 10);
+	Rectangle r1 = new Rectangle("Sploshnaya", 4.0, 4.0);
+	Rectangle r2 = new Rectangle(5.0);
+	System.out.println();
+	}
+}
